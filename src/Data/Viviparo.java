@@ -22,6 +22,7 @@ public class Viviparo extends Mamifero{
         this.numeroCrias = numeroCrias;
         this.trepador = trepador;
     }
+    
 
     public double getTiempoGestacion() {
         return tiempoGestacion;

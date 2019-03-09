@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 package UI;
+import java.util.Scanner;
 
 /**
  *
@@ -11,4 +12,21 @@ package UI;
  */
 public class UI {
     
+    
+    
+    public static void menu(){
+        Scanner entrada=new Scanner(System.in);
+        int opcion= entrada.nextInt();
+        
+        switch(opcion){
+            case 1:
+                menu();
+                break;
+            case 2:
+                menu();
+                break;
+            default:
+                
+        }       
+    }
 }

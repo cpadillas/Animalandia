@@ -11,6 +11,7 @@ import Data.Monotrema;
 import Data.NoVoladora;
 import Data.Viviparo;
 import Data.Voladora;
+import UI.UI;
 /**
  *
  * @author Estudiante
@@ -56,6 +57,10 @@ public class Animalandia {
         Voladora aveVoladora2= new Voladora("Insectos y nectar de flores", 79000, false, true, "Colorido", true, 
                 false, "Chordata", 65, "Colibri", "Hembra", new String[]{"Todo el mundo"}, false, true); 
         
+        
+        
+        
+        UI.menu();
     }
     
 }
