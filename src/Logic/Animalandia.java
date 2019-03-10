@@ -7,11 +7,17 @@ package Logic;
 import Data.Acuatico;
 import Data.AguaDulce;
 import Data.AguaSalada;
+import Data.Animal;
+import Data.Invertebrado;
 import Data.Monotrema;
 import Data.NoVoladora;
+import Data.Vertebrado;
 import Data.Viviparo;
 import Data.Voladora;
 import UI.UI;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.TreeMap;
 /**
  *
  * @author Estudiante
@@ -58,6 +64,28 @@ public class Animalandia {
                 false, "Chordata", 65, "Colibri", "Hembra", new String[]{"Todo el mundo"}, false, true); 
         
         
+        ArrayList<Vertebrado> vertebrados = new ArrayList<>();
+        vertebrados.add(pezAguaDulce1);
+        vertebrados.add(pezAguaDulce2);
+        vertebrados.add(pezAguaSalada1);
+        vertebrados.add(pezAguaSalada2);
+        vertebrados.add(viviparo1);
+        vertebrados.add(viviparo2);
+        vertebrados.add(monotrema1);
+        vertebrados.add(monotrema2);
+        vertebrados.add(aveVoladora1);
+        vertebrados.add(aveVoladora2);
+        vertebrados.add(aveNoVoladora1);
+        vertebrados.add(aveNoVoladora2);
+  
+        HashMap<String, Invertebrado> invertebrados = new HashMap<String, Invertebrado>();
+        invertebrados.put(moluscoAcuatico1.getNombre() , moluscoAcuatico1);
+        invertebrados.put(moluscoAcuatico1.getNombre() , moluscoAcuatico2);
+        
+        TreeMap<String, Animal> estrellas = new TreeMap<String, Animal>();
+        estrellas.put(aveNoVoladora1.getNombre(), aveNoVoladora1);
+        estrellas.put(viviparo1.getNombre(), viviparo1);
+       
         
         
         UI.menu();
