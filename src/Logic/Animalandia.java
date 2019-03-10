@@ -17,6 +17,7 @@ import Data.Voladora;
 import UI.UI;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Map;
 import java.util.TreeMap;
 /**
  *
@@ -80,15 +81,39 @@ public class Animalandia {
   
         HashMap<String, Invertebrado> invertebrados = new HashMap<String, Invertebrado>();
         invertebrados.put(moluscoAcuatico1.getNombre() , moluscoAcuatico1);
-        invertebrados.put(moluscoAcuatico1.getNombre() , moluscoAcuatico2);
+        invertebrados.put(moluscoAcuatico2.getNombre() , moluscoAcuatico2);
         
-        TreeMap<String, Animal> estrellas = new TreeMap<String, Animal>();
-        estrellas.put(aveNoVoladora1.getNombre(), aveNoVoladora1);
-        estrellas.put(viviparo1.getNombre(), viviparo1);
+        TreeMap<String, Animal> extintos = new TreeMap<String, Animal>();
+        extintos.put(aveNoVoladora1.getNombre(), aveNoVoladora1);
+        extintos.put(viviparo1.getNombre(), viviparo1);
        
         
         
-        UI.menu();
+        int opcion;
+            
+        do{
+            opcion=UI.menu();
+            switch(opcion){
+                case 1:
+                    for (Vertebrado vertebrado:vertebrados) {
+                        System.out.println(vertebrado.toString()+" y soy un "+ vertebrado.getClass().getSimpleName());
+                    }
+                    break;
+                case 2:
+                    for (Map.Entry<String, Invertebrado> invertebrado: invertebrados.entrySet()) {
+                        Invertebrado valor = invertebrado.getValue();
+                        System.out.println(valor.toString()+" y soy un "+ valor.getClass().getSimpleName());
+                    }
+                    break;
+                case 3:
+                    for (Map.Entry<String, Animal> extinto: extintos.entrySet()) {
+                        Animal valor = extinto.getValue();
+                        System.out.println(valor.toString());
+                    }
+                    break;
+                default:
+                
+            }
+        }while(opcion!=4);
     }
-    
 }
