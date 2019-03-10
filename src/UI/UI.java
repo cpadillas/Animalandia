@@ -15,6 +15,13 @@ public class UI {
     
     
     public static void menu(){
+        
+        System.out.println("BIENVENIDO A ANIMALANDIA");
+        System.out.println("1. Mostrar los vertebrados: ");
+        System.out.println("2. Motrar los invertebrados: ");
+        System.out.println("3. Mostras los extintos: ");
+        System.out.println("4. Terminar");
+        System.out.println("Digite la opción deseada ");
         Scanner entrada=new Scanner(System.in);
         int opcion= entrada.nextInt();
         
@@ -25,6 +32,8 @@ public class UI {
             case 2:
                 menu();
                 break;
+            case 3:
+                menu();
             default:
                 
         }       
