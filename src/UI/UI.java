@@ -14,7 +14,7 @@ public class UI {
     
     public static int menu(){
         
-        System.out.println("BIENVENIDO A ANIMALANDIA PERRA");
+        System.out.println("BIENVENIDO A ANIMALANDIA MALPARIDA");
         System.out.println("1. Mostrar los vertebrados: ");
         System.out.println("2. Motrar los invertebrados: ");
         System.out.println("3. Mostras los extintos: ");
