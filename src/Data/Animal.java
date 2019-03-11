@@ -23,6 +23,15 @@ public abstract class Animal {
         this.extinto = extinto;
         this.esqueleto = esqueleto;
     }
+
+    public String getNombre() {
+        return nombre;
+    }
+    
+    @Override
+    public String toString() {
+            return "Nombre: "+this.getNombre();
+	}
     
 }
 

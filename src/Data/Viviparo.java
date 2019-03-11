@@ -67,11 +67,13 @@ public class Viviparo extends Mamifero{
     public String getSexo() {
         return sexo;
     }
-
-    public String[] getUbicacion() {
-        return ubicacion;
+    
+    public String getUbicacion() {
+        for(String ubication : this.ubicacion){
+            System.out.print(ubication+ "-");
+        }
+        return "";
     }
-
     public boolean isExtinto() {
         return extinto;
     }
